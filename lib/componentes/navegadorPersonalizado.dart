@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:proyecto_turismo/paginas/paginaRecomendaciones.dart';
 import 'package:proyecto_turismo/paginas/paginaIngreso.dart';
 import 'package:proyecto_turismo/paginas/paginaPerfilUsuario.dart';
-import 'package:proyecto_turismo/AutenticacionUsuario.dart';
+import 'package:proyecto_turismo/Usuario.dart';
 
 class NavegadorPersonalizado extends StatelessWidget {
   final _indiceSeleccionado;
@@ -23,7 +23,8 @@ class NavegadorPersonalizado extends StatelessWidget {
         break;
       case 2:
         {
-          AutenticacionUsuario.esUsuario(context).then((valor) {
+          Usuario usuario = new Usuario();
+          usuario.datosUsuario().then((valor) {
             if (valor['nombre'] == 'noAutorizado') {
               Navigator.push(context,
                   MaterialPageRoute(builder: (context) => PaginaIngreso()));

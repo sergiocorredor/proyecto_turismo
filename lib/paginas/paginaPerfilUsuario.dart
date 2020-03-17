@@ -17,6 +17,7 @@ class _PaginaPerfilUsuarioState extends State<PaginaPerfilUsuario> {
   void cerrarSesion(BuildContext context) async {
     final SharedPreferences prefs = await SharedPreferences.getInstance();
     prefs.setString('token', null);
+    prefs.setBool('estaAutenticado', false);
 
     Navigator.push(context,
         MaterialPageRoute(builder: (context) => PaginaRecomendaciones()));
@@ -31,7 +32,7 @@ class _PaginaPerfilUsuarioState extends State<PaginaPerfilUsuario> {
         controller: _scrollController,
         slivers: <Widget>[
           SliverAppBar(
-            backgroundColor: Colors.blue,
+            backgroundColor: Colors.white,
             leading: IconButton(
               icon: Icon(Icons.arrow_back, color: Colors.white, size: 35.0),
               onPressed: () {
@@ -40,7 +41,7 @@ class _PaginaPerfilUsuarioState extends State<PaginaPerfilUsuario> {
             ),
             pinned: true,
             floating: true,
-            expandedHeight: 300.0,
+            expandedHeight: MediaQuery.of(context).size.width,
             flexibleSpace: LayoutBuilder(
                 builder: (BuildContext context, BoxConstraints constraints) {
               return FlexibleSpaceBar(
@@ -52,6 +53,8 @@ class _PaginaPerfilUsuarioState extends State<PaginaPerfilUsuario> {
                     style: TextStyle(color: Colors.black)),
                 background: Container(
                     decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        color: Colors.white,
                         image: DecorationImage(
                             image: AssetImage('./assets/images/sinusuario.jpg'),
                             fit: BoxFit.cover))),

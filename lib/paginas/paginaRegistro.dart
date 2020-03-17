@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:http/http.dart' as http;
-import 'dart:convert';
-import 'package:shared_preferences/shared_preferences.dart';
 
+import 'package:proyecto_turismo/Usuario.dart';
 import 'package:proyecto_turismo/paginas/paginaIngreso.dart';
 import 'package:proyecto_turismo/paginas/paginaRecomendaciones.dart';
 
@@ -18,8 +16,7 @@ class _PaginaRegistroState extends State<PaginaRegistro> {
   final _emailController = TextEditingController();
   final _password1Controller = TextEditingController();
   final _password2Controller = TextEditingController();
-  String _mensaje;
-
+  String _campoInvalido;
   @override
   void dispose() {
     this._nombreController.dispose();
@@ -30,36 +27,31 @@ class _PaginaRegistroState extends State<PaginaRegistro> {
     super.dispose();
   }
 
-  void registrarUsuario(BuildContext context) async {
-    if (_formKey.currentState.validate()) {
-      String datosJson = json.encode({
-        'nombre': _nombreController.text,
-        'apellido': _apellidoController.text,
-        'email': _emailController.text,
-        'celular': '', //Campos en la api, no en el formulario
-        'contrasenha': _password1Controller.text,
-        'confirmarContrasenha': _password2Controller.text,
-        'fechaNacimiento': '2000-01-01',
-        'sexo': ''
-      });
-      String url =
-          'https://api-turismo-nodejs.herokuapp.com/api/usuario/registrar';
-      var response = await http.post(url,
-          headers: {'Content-type': 'application/json'}, body: datosJson);
-      print(response.statusCode);
-      print(response.body);
+  void setCampoInvalido(String campoInvalido) {
+    setState(() {
+      this._campoInvalido = campoInvalido;
+    });
+  }
 
-      //Redireccionar dependiendo de la respuesta
-      if (response.statusCode == 200) {
-        //Obteniendo el token almacenado, si la respuesta a la solicitud es correcta.
-        final SharedPreferences prefs = await SharedPreferences.getInstance();
-        prefs.setString('token', jsonDecode(response.body)['token']);
-        Navigator.push(context,
-            MaterialPageRoute(builder: (context) => PaginaRecomendaciones()));
-      } else {
-        _mensaje = jsonDecode(response.body)['error'];
-        _formKey.currentState.validate();
-      }
+  //Funciona. Aunque siempre retorna error al registrar. Revisar api, base de datos, código.
+  void _registrarUsuario(BuildContext context) {
+    if (_formKey.currentState.validate()) {
+      Usuario usuario = new Usuario(
+        nombre: _nombreController.text,
+        apellido: _apellidoController.text,
+        email: _emailController.text,
+        contrasenha: _password1Controller.text,
+        confirmarContrasenha: _password2Controller.text,
+      );
+      usuario.registrarUsuario().then((valor) {
+        if (valor == 'ok') {
+          Navigator.push(context,
+              MaterialPageRoute(builder: (context) => PaginaRecomendaciones()));
+        } else if (valor.contains('ya existe')) {
+          setCampoInvalido('email');
+          _formKey.currentState.validate();
+        }
+      });
     }
   }
 
@@ -115,14 +107,14 @@ class _PaginaRegistroState extends State<PaginaRegistro> {
                   Spacer(),
                   TextFormField(
                     validator: (valor) {
-                      // if (valor.isEmpty) {
-                      //   return 'Campo requerido.';
-                      // } else if (!valor.contains('@')) {
-                      //   //MEJORAR
-                      //   return 'Se requiere un correo válido';
-                      // }
-                      // return null;
-                      return _mensaje;
+                      if (valor.isEmpty) {
+                        return 'Campo requerido.';
+                      } else if (!valor.contains('@')) {
+                        return 'Se requiere un correo válido'; //MEJORAR
+                      } else if (_campoInvalido == 'email') {
+                        return 'El usuario ya existe';
+                      }
+                      return null;
                     },
                     controller: _emailController,
                     decoration: InputDecoration(
@@ -179,7 +171,7 @@ class _PaginaRegistroState extends State<PaginaRegistro> {
                     padding: EdgeInsets.all(15.0),
                     color: Colors.blue,
                     onPressed: () {
-                      registrarUsuario(context);
+                      _registrarUsuario(context);
                     },
                     child: Row(
                       mainAxisSize: MainAxisSize.max,

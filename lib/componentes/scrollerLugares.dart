@@ -83,6 +83,7 @@ class ScrollerLugares extends StatelessWidget {
                       _titulo == 'Hoteles'
                           ? _listaLugares[index]['precio']
                           : _listaLugares[index]['description'],
+                      _listaLugares[index]['calificacion'],
                       _color),
                 ),
                 onTap: () {

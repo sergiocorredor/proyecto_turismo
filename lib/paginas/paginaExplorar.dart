@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:proyecto_turismo/paginas/paginaDetalles.dart';
+import 'package:proyecto_turismo/componentes/ratingEstrellas.dart';
 
 class PaginaExplorar extends StatefulWidget {
   final int _color;
@@ -87,31 +88,14 @@ class _PaginaExplorarState extends State<PaginaExplorar> {
                                               fontSize: altura * 0.024)),
                                     ),
                                     Container(
-                                      width: ancho - (ancho / 3),
-                                      alignment: Alignment.centerLeft,
-                                      child: Row(
-                                          children:
-                                              List.generate(5, (int index) {
-                                        return Icon(Icons.star_border,
-                                            color: Colors.yellow,
-                                            size: altura * 0.024);
-                                      })
-                                          // children: <Widget>[
-                                          //   Icon(Icons.star,
-                                          //       color: Colors.yellow, size: altura * 0.024),
-                                          //   Icon(Icons.star,
-                                          //       color: Colors.yellow, size: altura * 0.024),
-                                          //   Icon(Icons.star,
-                                          //       color: Colors.yellow, size: altura * 0.024),
-                                          //   Icon(Icons.star,
-                                          //       color: Colors.yellow, size: altura * 0.024),
-                                          //   Icon(Icons.star,
-                                          //       color: Colors.yellow, size: altura * 0.024),
-                                          //   Text('10 opiniones',
-                                          //       style: TextStyle(fontSize: 16.0))
-                                          // ],
-                                          ),
-                                    ),
+                                        width: ancho - (ancho / 3),
+                                        alignment: Alignment.centerLeft,
+                                        child: RatingEstrellas(
+                                            altura * 0.024,
+                                            false,
+                                            false,
+                                            widget._listaLugares[index]
+                                                ['calificacion'])),
                                     Container(
                                         width:
                                             MediaQuery.of(context).size.width -

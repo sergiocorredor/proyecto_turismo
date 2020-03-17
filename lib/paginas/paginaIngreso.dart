@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
+import 'package:proyecto_turismo/Usuario.dart';
 import 'package:proyecto_turismo/paginas/paginaRegistro.dart';
-import 'package:proyecto_turismo/AutenticacionUsuario.dart';
+import 'package:proyecto_turismo/paginas/paginaRecomendaciones.dart';
 
 class PaginaIngreso extends StatefulWidget {
   @override
@@ -24,6 +25,20 @@ class _PaginaIngresoState extends State<PaginaIngreso> {
   void setCampoInvalido(String campoInvalido) {
     setState(() {
       this._campoInvalido = campoInvalido;
+    });
+  }
+
+  void _ingresarUsuario(BuildContext context) {
+    Usuario usuario = new Usuario(
+        email: _emailController.text, contrasenha: _passwordController.text);
+    usuario.ingresarUsuario().then((valor) {
+      if (valor == 'ok') {
+        Navigator.push(context,
+            MaterialPageRoute(builder: (context) => PaginaRecomendaciones()));
+      } else {
+        setCampoInvalido(valor);
+        _formKey.currentState.validate();
+      }
     });
   }
 
@@ -89,12 +104,7 @@ class _PaginaIngresoState extends State<PaginaIngreso> {
                     padding: EdgeInsets.all(15.0),
                     color: Colors.blue,
                     onPressed: () {
-                      AutenticacionUsuario.ingresar(context,
-                              _emailController.text, _passwordController.text)
-                          .then((valor) {
-                        setCampoInvalido(valor);
-                        _formKey.currentState.validate();
-                      });
+                      _ingresarUsuario(context);
                     },
                     child: Row(
                       mainAxisSize: MainAxisSize.max,

@@ -11,7 +11,9 @@ final places = [
     ],
     'description':
         'Es una bella caída de agua ubicada a 10 kilómetros de Gámbita. Su exuberante belleza ha llamado la atención de turistas de todo el mundo, tanto que ahora es catalogada como uno de los lugares que hay que visitar en Colombia.',
-    'coordenadas': [],
+    'coordenadas': [7.133443, -73.119931],
+    'calificacion': 4.0,
+    'numeroVotos': 11,
   },
   {
     'name': 'Las ventanas de Tisquizoque',
@@ -25,7 +27,9 @@ final places = [
     ],
     'description':
         'Es un sitio turístico por excelencia desde donde se puede observar una encantadora panorámica del municipio. Esta cueva natural recibe el nombre de Ventanas de Tizquizoque porque se pueden atravesar de lado a lado. ',
-    'coordenadas': [],
+    'coordenadas': [7.133443, -73.119931],
+    'calificacion': 4.2,
+    'numeroVotos': 25,
   },
   {
     'name': 'Cueva de los Aviones',
@@ -39,7 +43,9 @@ final places = [
     ],
     'description':
         'Este lugar se encuentra ubicado en San Vicente de Chucurí, aproximadamente a dos horas de Bucaramanga y un destino especial para los amantes de lo extremo y la naturaleza. Podrás disfrutar de caminata ecológica, baño en pozo y la travesía dentro de la cueva.',
-    'coordenadas': [],
+    'coordenadas': [7.133443, -73.119931],
+    'calificacion': 3.6,
+    'numeroVotos': 30,
   },
   {
     'name': 'Las piscinas naturales',
@@ -53,7 +59,9 @@ final places = [
     ],
     'description':
         'En esta finca quizá no hay muchas actividades por hacer, más que disfrutar del contacto con la naturaleza y refrescarse en las piscinas de agua natural que ofrece el sitio, respirar aire puro y desconectarse del estrés y día a día de la ciudad.',
-    'coordenadas': [],
+    'coordenadas': [7.133443, -73.119931],
+    'calificacion': 2.5,
+    'numeroVotos': 15,
   },
   {
     'name': 'El hoyo de los pájaros',
@@ -66,7 +74,9 @@ final places = [
     ],
     'description':
         'Este enigmático paraje mogotano alcanza una profundidad de 98 metros y diámetro de 30. El hoyo de los pájaros es casi que un capricho de la naturaleza que se convirtió en un caverna que alberga en el fondo legendarios y gigantes nidos de los ruidosos pájaros guácharos y aves suramericanas de unos 30 centímetros de largo.',
-    'coordenadas': [],
+    'coordenadas': [7.133443, -73.119931],
+    'calificacion': 3.8,
+    'numeroVotos': 18,
   },
   {
     'name': 'Salto de la India',
@@ -80,7 +90,9 @@ final places = [
     ],
     'description':
         'Es un alto de dos caídas y aguas frías que le permite fortalecer hábitos de vida saludable, tener contacto con los lugareños y conocer un poco más del departamento.',
-    'coordenadas': [],
+    'coordenadas': [7.133443, -73.119931],
+    'calificacion': 3.3,
+    'numeroVotos': 19,
   },
   {
     'name': 'Cascada de los Caballeros',
@@ -93,7 +105,9 @@ final places = [
     ],
     'description':
         'Es probablemente uno de los accidentes geográficos más reconocidos y hermosos de Santander. Con más de 100 metros de altura, este complejo también está rodeado de piscinas naturales.',
-    'coordenadas': [],
+    'coordenadas': [7.133443, -73.119931],
+    'calificacion': 3.0,
+    'numeroVotos': 7,
   },
   {
     'name': 'El tamarindo Eco Lodge',
@@ -106,7 +120,9 @@ final places = [
     ],
     'description':
         'Está ubicado en el corazón del Cañón del Chicamocha, en un bosque natural de 10 acres, gracias a las piscinas naturales que rodean el lugar, El Tamarindo Eco Lodge ofrece a sus huéspedes una escapada relajante. ',
-    'coordenadas': [],
+    'coordenadas': [7.133443, -73.119931],
+    'calificacion': 4.0,
+    'numeroVotos': 29,
   },
   {
     'name': 'Refugio Piedra Parada',
@@ -120,7 +136,9 @@ final places = [
     ],
     'description':
         'Es el lugar ideal para los amantes de la naturaleza, la comida de la región y la pesca que se hace en el sector: de trucha. Este refugio ofrece una experiencia entre sofisticada y aventurera. Además podrá hacer caminatas ecológicas durante su estadía en el lugar o recorridos en bicicleta.',
-    'coordenadas': [],
+    'coordenadas': [7.133443, -73.119931],
+    'calificacion': 4.8,
+    'numeroVotos': 11,
   },
   {
     'name': 'Parque Nacional del Chicamocha',
@@ -134,7 +152,9 @@ final places = [
     ],
     'description':
         'Ubicado en el corazón del  imponente, majestuoso y fascinante Cañon del Chicamocha. El parque Panachi es uno de los destinos turísticos más importantes de Santander, donde se hace honor a la santandereanidad con un hermoso monumento.',
-    'coordenadas': [],
+    'coordenadas': [7.133443, -73.119931],
+    'calificacion': 2.0,
+    'numeroVotos': 25,
   },
 ];
 
@@ -151,7 +171,9 @@ final activities = [
     ],
     'description':
         'Recorrido familiar, no se requiere saber nadar.Disfruta de las aguas turbulentas del Río Fonce navegando por sus rápidos clase I, II y III en un bote con capacidad para 7 aventureros y 1 guía profesional.',
-    'coordenadas': [],
+    'coordenadas': [7.133443, -73.119931],
+    'calificacion': 4.0,
+    'numeroVotos': 10,
   },
   {
     'name': 'Trekking',
@@ -165,7 +187,9 @@ final activities = [
     ],
     'description':
         'A 5 minutos de San Gil, en el municipio de Pinchote, la empresa Xplorer construyó un parque de aventura extrema diseñado para toda la familia. Se trata de Trekking, un extenso y dinámico circuito conformado por cerca de 50 desafíos en puentes, descensos, atracciones y caminatas.',
-    'coordenadas': [],
+    'coordenadas': [7.133443, -73.119931],
+    'calificacion': 4.0,
+    'numeroVotos': 10,
   },
   {
     'name': 'Explora cavernas subterráneas',
@@ -179,7 +203,9 @@ final activities = [
     ],
     'description':
         'Por más de 13 años, una familia del municipio de Curití, al sur de Santander, ha custodiado uno de los lugares más lindos descubiertos en Colombia: la Cueva de la Vaca. Esta es una cavidad subterránea con una corriente de agua viva que se puede disfrutar sin riesgo alguno, compuesta por gran variedad de formaciones calcáreas como estalactitas y estalagmitas.',
-    'coordenadas': [],
+    'coordenadas': [7.133443, -73.119931],
+    'calificacion': 4.0,
+    'numeroVotos': 10,
   },
   {
     'name': 'Bungee Jumping',
@@ -193,7 +219,9 @@ final activities = [
     ],
     'description':
         'A 2 kilómetros de San Gil, por la vía al municipio de Charalá, luce imponente la plataforma de Colombia Bungee Jumping. Esta empresa colombiana, fundada por Juan Carlos Hernández, ofrece la oportunidad de dejar atrás los miedos saltando 70 metros de caída libre en la mitad del río Fonce, el mismo donde se hace rafting.',
-    'coordenadas': [],
+    'coordenadas': [7.133443, -73.119931],
+    'calificacion': 4.0,
+    'numeroVotos': 10,
   },
   {
     'name': 'Parapente',
@@ -207,7 +235,9 @@ final activities = [
     ],
     'description':
         'Este es uno de los mayores atractivos de Santander. Paracaídas de colores sobrevuelan casi a diario una cadena de montañas que pareciera infinita. Es como si sobre ellas se alzaran largos y enredados ríos, como una piel reseca: esa es la naturaleza que hace único al Cañón del Chicamocha. El lugar es rico en fauna y flora y atrae en su mayoría a turistas extranjeros.',
-    'coordenadas': [],
+    'coordenadas': [7.133443, -73.119931],
+    'calificacion': 4.0,
+    'numeroVotos': 10,
   },
   {
     'name': 'Glamping',
@@ -221,7 +251,9 @@ final activities = [
     ],
     'description':
         'Es un fenómeno global en dónde se une la experiencia de acampar al aire libre con el lujo y las condiciones de los mejores hoteles. El término es una fusión de ‘glamour’ y ‘camping’. Solo hay que disponerse a disfrutar de la naturaleza y la comodidad de dormir al aire libre.',
-    'coordenadas': [],
+    'coordenadas': [7.133443, -73.119931],
+    'calificacion': 4.0,
+    'numeroVotos': 10,
   },
   {
     'name': 'Explora el páramo',
@@ -235,7 +267,9 @@ final activities = [
     ],
     'description':
         'Vive la mejor experiencia en el páramo de Santurban ubicado a 3 horas de la ciudad de Bucaramanga, allí encontrarás lagunas, según la época del año (animales silvestres o aves)',
-    'coordenadas': [],
+    'coordenadas': [7.133443, -73.119931],
+    'calificacion': 4.0,
+    'numeroVotos': 10,
   },
   {
     'name': 'Cuatrimotos',
@@ -249,7 +283,9 @@ final activities = [
     ],
     'description':
         'Recorrido por zonas verdes a las afueras del municipio de Curití, puedes ir acompañado de una persona en la misma moto o sólo. Disfruta de la tranquilidad que despliega el bello paisaje natural durante 1 hora.',
-    'coordenadas': [],
+    'coordenadas': [7.133443, -73.119931],
+    'calificacion': 4.0,
+    'numeroVotos': 10,
   },
   {
     'name': 'Cabalgata',
@@ -263,7 +299,9 @@ final activities = [
     ],
     'description':
         'Montar a caballo es una agradable experiencia para compartir con tus seres queridos. Tú, ¿te conectas con la naturaleza? Paseo de 1:45 horas, por los predios del Club Campestre Santa Bárbara con 200 años de historia enmarcado en un ambiente verde, arrullados por el canto de los pájaros que se mezclan con lo rústico y cultural de la cultura Santandereana. Desafía tu suerte y atrévete a experimentar la sensación de pescar una de las variadas especies en nuestro lago.',
-    'coordenadas': [],
+    'coordenadas': [7.133443, -73.119931],
+    'calificacion': 4.0,
+    'numeroVotos': 10,
   },
   {
     'name': 'Ecoturismo Comunitario',
@@ -277,7 +315,9 @@ final activities = [
     ],
     'description':
         'En compañía con los habitantes rurales descubrirás paisajes únicos de aguas rojas, árboles prehistóricos, bosques andinos y páramos por donde transita el oso andino de anteojos, visitarás orquidearios con más de 90 especies de orquídeas y una colección única de variedades miniatura.',
-    'coordenadas': [],
+    'coordenadas': [7.133443, -73.119931],
+    'calificacion': 4.0,
+    'numeroVotos': 10,
   },
 ];
 
@@ -294,7 +334,9 @@ final hotels = [
     ],
     'description':
         'El Hotel Sevilla Plaza está ubicado en la ciudad de Bucaramanga, todas las habitaciones cuentan con baño privado, kit de aseo personal, televisión y botella de agua de cortesía. Nuestro hotel está muy cerca de Parque de las Cigarras, a solo 10 minutos en carro, también muy cerca se encuentra Parque Simon Bolivar Bucaramanga, a solo 9 minutos en carro. ',
-    'coordenadas': [],
+    'coordenadas': [7.133443, -73.119931],
+    'calificacion': 4.0,
+    'numeroVotos': 10,
     'precio': 'Desde \$38.900',
   },
   {
@@ -309,7 +351,9 @@ final hotels = [
     ],
     'description':
         'El Hotel El Rubí está ubicado en la ciudad de Bucaramanga, todas las habitaciones cuentan con baño privado, kit de aseo personal, televisión y botella de agua de cortesía. Nuestro hotel está muy cerca de Viaducto Provincial, a solo 4 minutos caminando, también muy cerca se encuentra Parque Simon Bolivar Bucaramanga, a solo 7 minutos en carro. ',
-    'coordenadas': [],
+    'coordenadas': [7.133443, -73.119931],
+    'calificacion': 4.0,
+    'numeroVotos': 10,
     'precio': 'Desde \$39.800'
   },
   {
@@ -324,7 +368,9 @@ final hotels = [
     ],
     'description':
         'El Hotel Shaday está ubicado en la ciudad de Bucaramanga, todas las habitaciones cuentan con baño privado, kit de aseo personal, televisión y botella de agua de cortesía. Nuestro hotel está muy cerca de Viaducto Provincial, a solo 6 minutos en carro, también muy cerca se encuentra Parque de las Cigarras, a solo 11 minutos caminando. ',
-    'coordenadas': [],
+    'coordenadas': [7.133443, -73.119931],
+    'calificacion': 4.0,
+    'numeroVotos': 10,
     'precio': 'Desde \$42.900'
   },
   {
@@ -339,7 +385,9 @@ final hotels = [
     ],
     'description':
         'El Hotel Chico Real está ubicado en la ciudad de Bucaramanga, todas las habitaciones cuentan con baño privado, kit de aseo personal, televisión y botella de agua de cortesía. Nuestro hotel está muy cerca de Parque Simon Bolivar Bucaramanga, a solo 13 minutos caminando, también muy cerca se encuentra Parroquia San Pío, a solo 8 minutos en carro. ',
-    'coordenadas': [],
+    'coordenadas': [7.133443, -73.119931],
+    'calificacion': 4.0,
+    'numeroVotos': 10,
     'precio': 'Desde \$43.800'
   },
   {
@@ -354,7 +402,9 @@ final hotels = [
     ],
     'description':
         'El Hotel Colonial Plaza está ubicado en la ciudad de Bucaramanga, todas las habitaciones cuentan con baño privado, kit de aseo personal, televisión y botella de agua de cortesía. Nuestro hotel está muy cerca de Parque Simon Bolivar Bucaramanga, a solo 9 minutos caminando, también muy cerca se encuentra Catedral Metropolitana de la Sagrada Familia, a solo 5 minutos caminando.',
-    'coordenadas': [],
+    'coordenadas': [7.133443, -73.119931],
+    'calificacion': 4.0,
+    'numeroVotos': 10,
     'precio': 'Desde \$44.200'
   },
   {
@@ -369,7 +419,9 @@ final hotels = [
     ],
     'description':
         'El Hotel Riviera Plaza está ubicado en la ciudad de Bucaramanga, todas las habitaciones cuentan con baño privado, kit de aseo personal, televisión y botella de agua de cortesía. Nuestro hotel está muy cerca de Viaducto Provincial, a solo 11 minutos en carro, también muy cerca se encuentra Parque Caminodromo Parque Real, a solo 17 minutos en carro. ',
-    'coordenadas': [],
+    'coordenadas': [7.133443, -73.119931],
+    'calificacion': 4.0,
+    'numeroVotos': 10,
     'precio': 'Desde \$51.800'
   },
   {
@@ -384,7 +436,9 @@ final hotels = [
     ],
     'description':
         'El Hotel Metropolitana Plaza está ubicado en la ciudad de Bucaramanga, todas las habitaciones cuentan con baño privado, kit de aseo personal, televisión y botella de agua de cortesía. Nuestro hotel está muy cerca de Viaducto Provincial, a solo 12 minutos en carro, también muy cerca se encuentra Parque de las Cigarras, a solo 8 minutos en carro',
-    'coordenadas': [],
+    'coordenadas': [7.133443, -73.119931],
+    'calificacion': 4.0,
+    'numeroVotos': 10,
     'precio': 'Desde \$57.800'
   },
   {
@@ -399,7 +453,9 @@ final hotels = [
     ],
     'description':
         'El Hotel La Puerta del Sol está ubicado en la ciudad de Bucaramanga, todas las habitaciones cuentan con baño privado, kit de aseo personal, televisión y botella de agua de cortesía. Nuestro hotel está muy cerca de Parque de las Cigarras, a solo 10 minutos caminando, también muy cerca se encuentra Parque Simon Bolivar Bucaramanga, a solo 9 minutos en carro. ',
-    'coordenadas': [],
+    'coordenadas': [7.133443, -73.119931],
+    'calificacion': 4.0,
+    'numeroVotos': 10,
     'precio': 'Desde \$64.800'
   },
   {
@@ -414,7 +470,9 @@ final hotels = [
     ],
     'description':
         'El Hotel Balmoral está ubicado en la ciudad de Bucaramanga, todas las habitaciones cuentan con baño privado, kit de aseo personal, televisión y botella de agua de cortesía. Nuestro hotel está muy cerca de Viaducto Provincial, a solo 8 minutos en carro, también muy cerca se encuentra Parque Santander, a solo 2 minutos caminando.',
-    'coordenadas': [],
+    'coordenadas': [7.133443, -73.119931],
+    'calificacion': 4.0,
+    'numeroVotos': 10,
     'precio': 'Desde \$71.800'
   },
   {
@@ -429,7 +487,9 @@ final hotels = [
     ],
     'description':
         'El Hotel Príncipe está ubicado en la ciudad de Bucaramanga, todas las habitaciones cuentan con baño privado, kit de aseo personal, televisión y botella de agua de cortesía. Nuestro hotel está muy cerca de Viaducto Provincial, a solo 13 minutos caminando, también muy cerca se encuentra Parque de las Cigarras, a solo 8 minutos en carro. ',
-    'coordenadas': [],
+    'coordenadas': [7.133443, -73.119931],
+    'calificacion': 4.0,
+    'numeroVotos': 10,
     'precio': 'Desde \$73.800'
   },
 ];
@@ -447,7 +507,9 @@ final restaurants = [
     ],
     'description':
         'El Viejo Chiflas es la perfecta oportunidad para que aquel comensal que quiera conocer y disfrutar de la gastronomía típica de Santander. Con más de 50 años de tradición la comida del viejo Chiflas ofrece a sus visitantes desde el típico desayuno santandereano hasta platos fuertes típicos de Santander tales como el cabro y la pepitoria.',
-    'coordenadas': [],
+    'coordenadas': [7.126438, -73.112723],
+    'calificacion': 4.0,
+    'numeroVotos': 10,
     'precio': 'Desde \$'
   },
   {
@@ -462,7 +524,9 @@ final restaurants = [
     ],
     'description':
         'En desayunos TONY nos especializamos en comida típica Santandereana, ofreciéndole siempre a nuestros clientes el mejor servicio y sabor de Santander.',
-    'coordenadas': [],
+    'coordenadas': [7.125969, -73.112350],
+    'calificacion': 4.0,
+    'numeroVotos': 10,
     'precio': 'Desde \$'
   },
   {
@@ -477,7 +541,9 @@ final restaurants = [
     ],
     'description':
         'Desde 1999 nace el primer restaurante Mercagán Parilla con el fin de ofrecer al público santandereano, los mejores cortes de carne de res a la parrila, provenientes de los mejores novillos producidos en el Departamento y especialmente en la ganadería.',
-    'coordenadas': [],
+    'coordenadas': [7.121015, -73.112019],
+    'calificacion': 4.0,
+    'numeroVotos': 10,
     'precio': 'Desde \$'
   },
   {
@@ -491,7 +557,9 @@ final restaurants = [
     ],
     'description':
         'El Restaurante Puerta del Sol es especializado en ofrecer a nuestros comensales comida típica Santandereana y en satisfacer las necesidades de menús en eventos y reuniones empresariales, mediante la oferta de servicios integrados, que hacen de este, el primero de la Ciudad de Bucaramanga.',
-    'coordenadas': [],
+    'coordenadas': [7.104610, -73.111959],
+    'calificacion': 4.0,
+    'numeroVotos': 10,
     'precio': 'Desde \$'
   },
   {
@@ -506,7 +574,9 @@ final restaurants = [
     ],
     'description':
         'Nacimos en el Garaje de una casa el 26 de Noviembre de 1996, hoy somos más de 7 Restaurantes a nivel nacional, llegamos al corazón de los Colombianos con nuestras Rock Burger, preparaciones que a lo largo de nuestra experiencia hacemos la receta de sabores únicos, arriesgados, todo con una actitud y energía tan Rockera que somos la cadena de Hamburguesas más amada por los Santandereanos.',
-    'coordenadas': [],
+    'coordenadas': [7.117062, -73.110686],
+    'calificacion': 4.0,
+    'numeroVotos': 10,
     'precio': 'Desde \$'
   },
   {
@@ -521,7 +591,9 @@ final restaurants = [
     ],
     'description':
         'Somos un espacio dedicado a los amantes de la comida artesanal italiana. Ofrecemos platos fuertes, pizza artesanal, postres, cocteles y bebidas. Mia Nonna es ideal para celebraciones especiales y reuniones con amigos o familiares; nuestro buen servicio, comodidad y los colores que invitan a quedarse nos han posicionado como uno de los mejores restaurantes de la Ciudad Bonita. ¡Bienvenidos siempre a nuestra Auténtica Cucina!',
-    'coordenadas': [],
+    'coordenadas': [7.112861, -73.109072],
+    'calificacion': 4.0,
+    'numeroVotos': 10,
     'precio': 'Desde \$'
   },
   {
@@ -536,7 +608,9 @@ final restaurants = [
     ],
     'description':
         'Para los españoles, un traidor; para los santandereanos, un héroe... Una leyenda llamada Cabrón. La leyenda de José María Caballero, español de nacimiento y santandereano por decisión, amante de la cocina y fiel a sus sentimientos, es la inspiración de nuestro restaurante. Su lucha por nuestra causa, aunque esto significara la traición a su tierra natal, lo convierte en un singular héroe de la región que sin duda merece un homenaje. Por eso, revivimos su leyenda reinterpretando la cocina santandereana con un menú atípico, lleno de historia y puro sabor de nuestra tierra.',
-    'coordenadas': [],
+    'coordenadas': [7.121470, -73.110281],
+    'calificacion': 4.0,
+    'numeroVotos': 10,
     'precio': 'Desde \$'
   },
   {
@@ -550,7 +624,9 @@ final restaurants = [
     ],
     'description':
         '‘Battuto’ es un término culinario italiano que traduce golpear, y recibe este nombre por el sonido que produce el cuchillo sobre la tabla de cortar cuando se pica cebolla, apio, zanahoria y ajo. Combinación que al agregarle aceite de olvida o mantequilla o en algunos casos grasa de  cerdo se convierte en la base de la mayoría de las recetas de la cocina italiana.',
-    'coordenadas': [],
+    'coordenadas': [7.111182, -73.107476],
+    'calificacion': 4.0,
+    'numeroVotos': 10,
     'precio': 'Desde \$'
   },
   {
@@ -565,7 +641,9 @@ final restaurants = [
     ],
     'description':
         'Bacca es un lugar donde puedes encontrar desde deliciosos cortes de carnes e innovadoras hamburguesas, hasta ensaladas, pastas, cócteles, postres y más… Es orgullosamente 100% santandereano, realizado con materias primas locales y siempre innovando, con su chef Elkin Bacca, en técnicas culinarias.',
-    'coordenadas': [],
+    'coordenadas': [7.111224, -73.108946],
+    'calificacion': 4.0,
+    'numeroVotos': 10,
     'precio': 'Desde \$'
   },
   {
@@ -580,7 +658,9 @@ final restaurants = [
     ],
     'description':
         'Chicken Box esta ubicado en la zona de cabecera en la ciudad de Bucaramanga. Ofreciendo una excelente decoración y un ambiente muy sureño al estilo americano, en el que podrás encontrar un punto de comida especializada en platos a base de pollo.',
-    'coordenadas': [],
+    'coordenadas': [7.110372, -73.108203],
+    'calificacion': 4.0,
+    'numeroVotos': 10,
     'precio': 'Desde \$'
   },
 ];

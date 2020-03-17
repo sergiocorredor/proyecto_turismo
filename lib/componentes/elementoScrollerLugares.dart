@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
 
+import 'package:proyecto_turismo/componentes/ratingEstrellas.dart';
+
 class ElementoScrollerLugares extends StatelessWidget {
   final String _tipoOpcion;
   final String _imagen;
   final String _descripcion;
+  final double _calificacion;
   final int _color;
 
-  ElementoScrollerLugares(
-      this._tipoOpcion, this._imagen, this._descripcion, this._color);
+  ElementoScrollerLugares(this._tipoOpcion, this._imagen, this._descripcion,
+      this._calificacion, this._color);
 
   @override
   Widget build(BuildContext context) {
@@ -44,21 +47,13 @@ class ElementoScrollerLugares extends StatelessWidget {
           child: Align(
             alignment: FractionalOffset.bottomCenter,
             child: Container(
-              decoration: BoxDecoration(
-                  border: Border(
-                top: BorderSide(color: Colors.blue),
-              )),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  Icon(Icons.star, color: Colors.yellow),
-                  Icon(Icons.star, color: Colors.yellow),
-                  Icon(Icons.star, color: Colors.yellow),
-                  Icon(Icons.star, color: Colors.yellow),
-                  Icon(Icons.star, color: Colors.yellow),
-                ],
-              ),
-            ),
+                width: ancho * 0.46,
+                decoration: BoxDecoration(
+                    border: Border(
+                  top: BorderSide(color: Colors.blue),
+                )),
+                child: RatingEstrellas(
+                    altura * 0.028, false, false, _calificacion)),
           ),
         ),
       ]),
@@ -68,7 +63,7 @@ class ElementoScrollerLugares extends StatelessWidget {
         /*borderRadius: BorderRadius.all(Radius.circular(10.0))*/
       ),
       margin: EdgeInsets.only(left: ancho * 0.01, right: ancho * 0.01),
-      width: ancho *  0.46,
+      width: ancho * 0.46,
     );
   }
 }
